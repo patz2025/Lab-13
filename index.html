@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JS</title>
+
+</head>
+<p id="switch">&#9728; Click the button for some shine! &#9728;</p>
+<button type="button" id="shineOn">Turn On</button>
+<button type="button" id="shineOff">Turn Off</button>
+
+</html>
+
+
+<script>
+
+function start() {
+var button = document.getElementById('shineOn');
+button.onclick = shine;
+}
+
+ function shine(){
+    document.getElementById('switch').style.font='ariel';
+    document.getElementById('switch').style.color='yellow';
+
+ }
+
+ function start2() {
+var button = document.getElementById('shineOff');
+
+button.onclick = noShine;
+}
+
+function noShine(){
+
+document.getElementById('switch').style.font='ariel';
+// document.getElementById('switch').style.color='black';
+
+}
+
+ window.onload = start;
+
+</script>
